@@ -935,6 +935,10 @@
        canonical_units: kg m-2 s-1
        description: land export to river
      #
+     - standard_name: Flrl_rofdom
+       canonical_units: kg m-2 s-1
+       description: land export to river
+     #
      #-----------------------------------
      # section: river export
      #-----------------------------------
