@@ -1032,7 +1032,7 @@ contains
     call diag_lnd(is_local%wrap%FBImp(complnd,complnd), 'Flrl_rofi'  , f_watr_ioff, ic,&
          areas, lfrac, budget_local, minus=.true., rc=rc)
     if (ChkErr(rc,__LINE__,u_FILE_u)) return
-    call diag_lnd(is_local%wrap%FBImp(complnd,complnd), 'Flrl_rofdom', f_watr_roff, ic,&
+    call diag_lnd(is_local%wrap%FBImp(complnd,complnd), 'Flrl_rofdoc', f_watr_roff, ic,&
          areas, lfrac, budget_local, minus=.true., rc=rc)
     if (ChkErr(rc,__LINE__,u_FILE_u)) return
 
@@ -1242,7 +1242,7 @@ contains
     if (ChkErr(rc,__LINE__,u_FILE_u)) return
     call diag_rof(is_local%wrap%FBExp(comprof), 'Flrl_rofi'  , f_watr_ioff, ic, areas, budget_local, rc=rc)
     if (ChkErr(rc,__LINE__,u_FILE_u)) return
-    call diag_rof(is_local%wrap%FBExp(comprof), 'Flrl_rofdom', f_watr_roff, ic, areas, budget_local, rc=rc)
+    call diag_rof(is_local%wrap%FBExp(comprof), 'Flrl_rofdoc', f_watr_roff, ic, areas, budget_local, rc=rc)
     if (ChkErr(rc,__LINE__,u_FILE_u)) return
 
     if (flds_wiso) then

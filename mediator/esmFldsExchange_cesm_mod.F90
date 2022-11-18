@@ -3042,14 +3042,14 @@ contains
     ! to rof: DOM from land
     ! ---------------------------------------------------------------------
     if (phase == 'advertise') then
-       call addfld(fldListFr(complnd)%flds, 'Flrl_rofdom')
-       call addfld(fldListTo(comprof)%flds, 'Flrl_rofdom')
+       call addfld(fldListFr(complnd)%flds, 'Flrl_rofdoc')
+       call addfld(fldListTo(comprof)%flds, 'Flrl_rofdoc')
     else
-       if ( fldchk(is_local%wrap%FBImp(complnd, complnd), 'Flrl_rofdom', rc=rc) .and. &
-            fldchk(is_local%wrap%FBExp(comprof)         , 'Flrl_rofdom', rc=rc)) then
-          call addmap(fldListFr(complnd)%flds, 'Flrl_rofdom', comprof, mapconsf, 'lfrac', lnd2rof_map)
-          call addmrg(fldListTo(comprof)%flds, 'Flrl_rofdom', &
-               mrg_from=complnd, mrg_fld='Flrl_rofdom', mrg_type='copy_with_weights', mrg_fracname='lfrac')
+       if ( fldchk(is_local%wrap%FBImp(complnd, complnd), 'Flrl_rofdoc', rc=rc) .and. &
+            fldchk(is_local%wrap%FBExp(comprof)         , 'Flrl_rofdoc', rc=rc)) then
+          call addmap(fldListFr(complnd)%flds, 'Flrl_rofdoc', comprof, mapconsf, 'lfrac', lnd2rof_map)
+          call addmrg(fldListTo(comprof)%flds, 'Flrl_rofdoc', &
+               mrg_from=complnd, mrg_fld='Flrl_rofdoc', mrg_type='copy_with_weights', mrg_fracname='lfrac')
        end if
     end if
 
