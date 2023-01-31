@@ -935,8 +935,12 @@
        canonical_units: kg m-2 s-1
        description: land export to river
      #
-     - standard_name: Flrl_rofdoc
-       canonical_units: kg m-2 s-1
+     - standard_name: Flrl_surfdoc
+       canonical_units: gC m-2 s-1
+       description: land export to river
+     #
+     - standard_name: Flrl_subdoc
+       canonical_units: gC m-2 s-1
        description: land export to river
      #
      #-----------------------------------
